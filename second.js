@@ -71,3 +71,30 @@ console.log(!false || false);
 
 // == "it means equals to the other value"
 // === "It shows value is equal along with the type"
+
+
+// INCREMENT
+let q = 70;
+// q+=10               //It will add 10 in 70 directly and it will be 80
+console.log(q);
+
+// Post Increment
+console.log(q++); // q = q+1 70+1 = 71  (It first shows the output and then adds the value)
+console.log(q); // 71
+
+// Pre Increment
+console.log(++q); // ++q 71+1 (It first adds the value before showing the oputput)
+
+// DECREMENT
+
+let p = 20
+
+console.log(p);
+
+// Post Decrement
+console.log(p--);   // p = p-1 20-1=19 (It first shows the output and then subtracts the value)
+console.log(p);     // 19
+
+// Pre Decrement
+console.log(--p);   // --p 19-1 (It first subtracts the value before showing output)
+
