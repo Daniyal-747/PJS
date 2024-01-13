@@ -65,3 +65,25 @@
 //     console.log(n, obj[n])
 // }
 
+// let num = 50
+
+// for(let i=0; i<=num; i++){
+//     if(i%2==0){
+//         console.log(`${i} Your number is Even`)
+//     }
+//     else{
+//         console.log(`${i} Your number is Odd`)
+//     }
+// }
+
+let num = prompt("Enter Your Number")
+
+for(let i=0; i<=num; i++){
+    if(i%2==0){
+        console.log(`${i} Your number is Even`)
+    }
+    else{
+        console.log(`${i} Your number is Odd`)
+    }
+}
+
