@@ -7,3 +7,4 @@ let sweetDish = ["CUSTARD", "ICE CREAM", "GULAB JAMAN", "HALWA"];
 
 let menu = bbq.concat(seaFood, sweetDish);
 console.log(menu)
+

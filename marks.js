@@ -14,14 +14,14 @@ let obtainedMarks = maths + english + science + chemistry + physics
 
 let per = obtainedMarks/500*100
 
-console.log(per);
+// console.log(per);
 
 // console.log(user);
-// console.log(MATHS);
-// console.log(ENGLISH);
-// console.log(SCIENCE);
-// console.log(CHEMISTRY);
-// console.log(PHYSICS);
+// console.log(maths);
+// console.log(english);
+// console.log(science);
+// console.log(chemistry);
+// console.log(physics);
 
 if(per>=90 && per<=100 ){
     console.log("Your Grade is A+")
@@ -41,4 +41,3 @@ else if(per>=50 && per<=40){
 else{
     console.log("you are fail")
 }
-
