@@ -1,33 +1,44 @@
 // 5 Subjects. User will enter the marks
+// Prompt are Strings by defaults
+
+//  parseInt is used to convert string into integer/number i.e. arseInt(prompt("Enter Anything"))
 
 let user = prompt("Enter Your Name")
-let MATHS = prompt("Enter Your Maths Marks");
-let ENGLISH = prompt("Enter Your English Marks");
-let SCIENCE = prompt("Enter Your Science Marks");
-let CHEMISTRY = prompt("Enter Your Chemistry Marks");
-let PHYSICS = prompt("Enter Your Physics Marks");
+let maths = parseInt(prompt("Enter Your Maths Number"))
+let english = parseInt(prompt("Enter Your english Number"))
+let science = parseInt(prompt("Enter Your science Number"))
+let chemistry = parseInt(prompt("Enter Your chemistry Number"))
+let physics = parseInt(prompt("Enter Your physics Number"))
 
-console.log(user);
-console.log(MATHS);
-console.log(ENGLISH);
-console.log(SCIENCE);
-console.log(CHEMISTRY);
-console.log(PHYSICS);
+let obtainedMarks = maths + english + science + chemistry + physics
 
+let per = obtainedMarks/500*100
 
-// let mathMarks = prompt("Enter Your Math Marks")
+console.log(per);
 
-// if(mathMarks>=90){
-//     console.log("Your Grade is A+")
-// }if(mathMarks>=80){
-//     console.log("Your Grade is A")
-// }if(mathMarks>=70){
-//     console.log("Your Grade is B");
-// }if(mathMarks>=60){
-//     console.log("Your Grade is C");
-// }if(mathMarks>=50){
-//     console.log("Your grade is D")
-// }else{
-//     console.log("you are fail")
-// }
+// console.log(user);
+// console.log(MATHS);
+// console.log(ENGLISH);
+// console.log(SCIENCE);
+// console.log(CHEMISTRY);
+// console.log(PHYSICS);
+
+if(per>=90 && per<=100 ){
+    console.log("Your Grade is A+")
+}
+else if(per>=80 && per<=90){
+    console.log("Your Grade is A")
+}
+else if(per>=70 && per<=80){
+    console.log("Your Grade is B");
+}
+else if(per>=60 && per<=70){
+    console.log("Your Grade is C");
+}
+else if(per>=50 && per<=40){
+    console.log("Your grade is D")
+}
+else{
+    console.log("you are fail")
+}
 
