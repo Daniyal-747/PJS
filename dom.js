@@ -28,3 +28,18 @@ newElem.innerHTML = "hello"                     //This adds an element in the p 
 
 let para = document.createElement('h2');        //This adds a new element in the p tag.
 newElem.appendChild(para)                       // We do not use [0] here because we are targeting 'p' which is a single element
+
+let btn = document.createElement('button');
+obj[0].appendChild(btn);
+btn.innerHTML = "Submit"
+btn.style.padding = "20px 24px"
+btn.className = "btn btn-dark"
+btn.style.fontSize = "24px"
+
+//EVENTS (Event Listener)
+btn.addEventListener('click', toggleBtn);
+function toggleBtn(){
+    console.log("You clicked on me!");
+    btn.innerHTML = "Wow"
+}
+
