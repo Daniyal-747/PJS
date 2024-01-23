@@ -26,4 +26,5 @@ obj[0].appendChild(newElem);                    //appendChild means we want to a
 
 newElem.innerHTML = "hello"                     //This adds an element in the p tag which was defined in (New Elem)
 
-
+let para = document.createElement('h2');        //This adds a new element in the p tag.
+newElem.appendChild(para)                       // We do not use [0] here because we are targeting 'p' which is a single element
