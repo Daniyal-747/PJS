@@ -18,9 +18,9 @@ function addFood(e){
 
     currentInput.value = "" 
     // OR
-    if(btn.click){
-        currentInput.value = ""
-    }
+    // if(btn.click){
+    //     currentInput.value = ""
+    // }
 }
 
 function removeFood(currElement){
