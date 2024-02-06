@@ -43,3 +43,29 @@ promiseThree.then(function(myUser){
 .then(function(abc){
     console.log(abc);
 })
+
+// Fourth Promise
+
+let promiseFour = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error = true;
+        if(!error){
+            resolve({name: "CAMEL" , password: "54321"})
+        }else{
+            reject("Error : Something went wrong")
+        }
+    },4000)
+})
+promiseFour
+.then(function(userData){
+    return userData.name
+})
+.then(function(myData){
+    console.log(myData);
+})
+.catch(function(error){
+    console.log(error);
+})
+.finally(function(){
+    console.log("Finally");
+})
