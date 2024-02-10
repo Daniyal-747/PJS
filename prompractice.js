@@ -78,3 +78,18 @@ async function consumedpromiseFive(){
 consumedpromiseFive()
 
 
+// ASYNC CONDITION 2    (Bringing someone eleses data to ours)
+
+async function usersData(){
+    try{
+        let data = await fetch ('https://jsonplaceholder.typicode.com/users');  //Fetch is used to get data from outsource
+        let myData = await data.json()      //Await is used to wait for print until data is fectched
+        console.log(myData)
+        document.write(JSON.stringify(myData))      //JSON.stringify is used to get JSON data in same form 
+    }
+    catch(error){
+        console.log(error);
+    }
+}
+usersData()
+
