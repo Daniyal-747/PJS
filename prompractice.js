@@ -52,3 +52,29 @@ promiseFour.then(function(apple){
     console.log("The promise has been resolved or rejected");
 })
 
+// ASYNC CONDITION
+
+let promiseFive = new Promise(function(resolve , reject){
+    setTimeout(function(){
+        let error = false;
+        if(!error){
+            resolve({name: "Ahsan" , email: "Ahsan@gmail.com"})
+        }
+        else{
+            reject("ASYNC")
+        }
+    }, 2000)
+})
+
+async function consumedpromiseFive(){
+    try{
+        let res = await promiseFive
+        console.log(res);
+    }
+    catch(error){
+            console.log(error);
+        }
+}
+consumedpromiseFive()
+
+
