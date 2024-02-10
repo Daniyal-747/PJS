@@ -26,3 +26,29 @@ promiseThree.then(function(myText){
     console.log(userValue);
 })
 
+
+// REJECT Condition
+
+let promiseFour = new Promise(function(resolve , reject){
+    setTimeout(function(){
+        let error = true;
+        if(!error){
+            resolve({name: "Hamza" , email: "Hamza@gmail.com"})
+        }
+        else{
+            reject("ERROR : WRONG")
+        }
+    },6000)
+})
+
+promiseFour.then(function(apple){
+    return apple.email
+}).then(function(mango){
+    console.log(mango);
+}).catch(function(error){                   //Catch is used for reject & return is used for resolve
+    console.log(error);
+})
+.finally(function(){
+    console.log("The promise has been resolved or rejected");
+})
+
